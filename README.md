@@ -1,9 +1,30 @@
-## Aula 02 - Ajuste no menu
+## Aula 03 - Footer
 
-Na hora de definir o posicionamento dos elementos, devo olhar para o elemento pai e aplicar o flexbox nele. Por exemplo:
+Ajustando footer um ao lado do outro:
 
 ```css
-.cabecalhoPrincipal-nav {
-  display: flex;
+.rodapePrincipal-patrocinadores .container {
+    display: flex;
+    justify-content: space-between;
 }
+
+.rodapePrincipal-patrocinadores-list {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 70%;
+    margin-right: 5% ;
+
+}
+
+.rodapePrincipal-contatoForm {
+    width: 25%;
+}
+
+.rodapePrincipal-contatoForm-fieldset {
+    display: flex;
+}
+
+
+
 ```
