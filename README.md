@@ -1,19 +1,56 @@
-## Aula 05 - Grid Flex
+## Aula 06 - Reponsive
 
-Fazendo o grid dos cursos
+Ajustando para responsivo
+
 
 ```css
 
-.conteudoPrincipal-cursos-link {
-    width: 23%;
-    margin-bottom: 1%;
-}
-.conteudoPrincipal-cursos-link: nth-child(4n+1) {
-    margin-left: 0;
-}
+@media(max-width: 768px) {
 
-.conteudoPrincipal-cursos-link: nth-child(4n) {
-    margin-right: 0;
-}
+  .cabecalhoPrincipal .container{
+    direction:column;
+    align-items: initial;
+    text-align: center;
+  }
+
+  .cabecalhoPrincipal .container{
+      flex-direction:column;
+  }
+
+  .conteudoPrincipal-cursos-link {
+      width:100%;
+  }
+
+  .conteudoPrincipal-cursos {
+      flex-direction: column;
+  }
+
+  .rodapePrincipal-navMap-list {
+      height: auto;
+  }
+
+  .rodapePrincipal-patrocinadores-container {
+      flex-direction: column;
+      align-items: center;
+  }
+  .rodapePrincipal-patrocinadores .container{
+    flex-direction: column;
+  }
+  .rodapePrincipal-contatoForm {
+      width: 100%;
+  }
+
+  .rodapePrincipal-patrocinadores-list {
+      margin: 0;
+      width: 100%;
+  }
+
+  .rodapePrincipal-contatoForm-fieldset {
+      justify-content:center
+  }
+
+  .cabecalhoPrincipal-nav {
+    flex-direction: column;
+  }
 
 ```
