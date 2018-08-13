@@ -1,30 +1,12 @@
-## Aula 03 - Footer
+## Aula 04 - Footer Flex Collunm
 
-Ajustando footer um ao lado do outro:
+Ajustando footer com flex-flow para ficar uma do lado da outra
 
 ```css
-.rodapePrincipal-patrocinadores .container {
-    display: flex;
-    justify-content: space-between;
+.rodapePrincipal-navMap-list{
+  display: flex;
+  flex-flow: column wrap;
+  height: 32vh;
 }
-
-.rodapePrincipal-patrocinadores-list {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    width: 70%;
-    margin-right: 5% ;
-
-}
-
-.rodapePrincipal-contatoForm {
-    width: 25%;
-}
-
-.rodapePrincipal-contatoForm-fieldset {
-    display: flex;
-}
-
-
 
 ```
