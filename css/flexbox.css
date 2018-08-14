@@ -24,14 +24,17 @@
 .rodapePrincipal-contatoForm {
     width: 25%;
 }
+
 .rodapePrincipal-contatoForm-fieldset{
   display: flex;
 }
+
 .rodapePrincipal-navMap-list{
   display: flex;
   flex-flow: column wrap;
   height: 32vh;
 }
+
 .conteudoPrincipal-cursos {
     display: flex;
     flex-wrap: wrap;
@@ -41,6 +44,7 @@
     width: 23%;
     margin-bottom: 1%;
 }
+
 .conteudoPrincipal-cursos-link: nth-child(4n+1) {
     margin-left: 0;
 }
@@ -48,6 +52,31 @@
 .conteudoPrincipal-cursos-link: nth-child(4n) {
     margin-right: 0;
 }
+
+.videoSobre .container {
+    display: flex;
+}
+
+.videoSobre-sobre {
+    text-align: center;
+    display: flex;
+}
+
+.videoSobre-sobre {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 2;
+}
+
+.videoSobre-sobre-list {
+    flex-grow: 1;
+}
+
+.videoSobre-video {
+    flex-grow: 1;
+}
+
 
 /* responsivo */
 @media(max-width: 768px) {
@@ -78,9 +107,11 @@
       flex-direction: column;
       align-items: center;
   }
+
   .rodapePrincipal-patrocinadores .container{
     flex-direction: column;
   }
+
   .rodapePrincipal-contatoForm {
       width: 100%;
   }

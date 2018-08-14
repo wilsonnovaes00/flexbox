@@ -1,56 +1,33 @@
-## Aula 06 - Reponsive
+## Aula 07 - Ajuste Video
 
-Ajustando para responsivo
+Ajuste da section de video
 
 
 ```css
 
-@media(max-width: 768px) {
+.videoSobre .container {
+    display: flex;
+}
 
-  .cabecalhoPrincipal .container{
-    direction:column;
-    align-items: initial;
+.videoSobre-sobre {
     text-align: center;
-  }
+    display: flex;
+}
 
-  .cabecalhoPrincipal .container{
-      flex-direction:column;
-  }
-
-  .conteudoPrincipal-cursos-link {
-      width:100%;
-  }
-
-  .conteudoPrincipal-cursos {
-      flex-direction: column;
-  }
-
-  .rodapePrincipal-navMap-list {
-      height: auto;
-  }
-
-  .rodapePrincipal-patrocinadores-container {
-      flex-direction: column;
-      align-items: center;
-  }
-  .rodapePrincipal-patrocinadores .container{
+.videoSobre-sobre {
+    text-align: center;
+    display: flex;
     flex-direction: column;
-  }
-  .rodapePrincipal-contatoForm {
-      width: 100%;
-  }
+    flex-grow: 2;
+}
 
-  .rodapePrincipal-patrocinadores-list {
-      margin: 0;
-      width: 100%;
-  }
+.videoSobre-sobre-list {
+    flex-grow: 1;
+}
 
-  .rodapePrincipal-contatoForm-fieldset {
-      justify-content:center
-  }
+.videoSobre-video {
+    flex-grow: 1;
+}
 
-  .cabecalhoPrincipal-nav {
-    flex-direction: column;
-  }
 
 ```
